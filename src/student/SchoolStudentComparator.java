@@ -8,9 +8,9 @@ public class SchoolStudentComparator implements Comparator<SchoolStudent> {
     public int compare(SchoolStudent s1, SchoolStudent s2) {
         if (s1.getLessons().avaregeGrade() == s2.getLessons().avaregeGrade()){
             if (s1.getSchoolNumber() > s2.getSchoolNumber()) {
-                return 1;
-            }else{
                 return -1;
+            }else{
+                return 1;
             }
         }
         if (s1.getLessons().avaregeGrade() > s2.getLessons().avaregeGrade()) {
